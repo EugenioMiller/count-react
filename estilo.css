@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0px;
+  background-color: dimgray;
+  color: snow;
+  text-align: center;
+}
+
+.mayor {
+  color: springgreen;
+}
+
+.menor {
+  color: tomato;
+}

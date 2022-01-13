@@ -1,0 +1,26 @@
+const Contador = () => {
+  const [contador, setContador] = React.useState(0);
+
+  const aumentar = () => {
+    setContador(contador + 1);
+  };
+
+  const disminuir = () => {
+    setContador(contador - 1);
+  };
+
+  return (
+    <div>
+      <h1 className={contador > 0 ? "mayor" : "menor"}>
+        Contador : {contador}{" "}
+      </h1>
+      <hr />
+
+      <button onClick={aumentar}>Aumentar</button>
+      <button onClick={disminuir}>Disminuir</button>
+    </div>
+  );
+};
+
+ReactDOM.render(<Contador />, document.getElementById("root"));
+//Los parámetros son: primero lo que quiero renderizar y segundo dónde lo voy a renderizar
